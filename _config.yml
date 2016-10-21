@@ -1,0 +1,6 @@
+permalink: /posts/:year/:month/:day/:title.html
+pygments: true
+exclude:
+  - Rakefile
+  - README
+  - config.rb
