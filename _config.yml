@@ -1,0 +1,39 @@
+# Site settings
+title: Rodrigo Pandini
+description: 'Are you ready kids?'
+url: 'http://rodrigopandini.com'
+baseurl: '/'
+google_analytics: 'UA-16818435-1'
+disqus_shortname: 'rodrigopandini'
+
+author:
+  name: 'Rodrigo Pandini'
+  email: rodrigopandini@gmail.com
+  twitter_username: rodrigopandini
+  # facebook_username: rodrigopandini
+  github_username:  rodrigopandini
+  # linkedin_username:  rodrigopandini
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
