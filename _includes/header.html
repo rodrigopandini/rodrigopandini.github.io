@@ -77,16 +77,6 @@
               </li>
             {% endif %}
 
-            {% if site.author.email %}
-              <!-- Resume -->
-              <li class="navigation__item">
-                <a href="{{ "resume.pdf" | prepend: site.baseurl }}" title="Resume {{ site.author.name }}" target="_blank">
-                  <i class="icon icon-page"></i>
-                  <span class="label">Resume</span>
-                </a>
-              </li>
-            {% endif %}
-
             <!-- RSS -->
             <li class="navigation__item">
               <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
